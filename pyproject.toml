@@ -1,7 +1,7 @@
 [project]
 name = "fabricate"
 dynamic = ["version"]
-description = "Add your description here"
+description = "Fabricates given blueprint and stores it in the clipboard"
 authors = [
     { name = "FloatingInt", email = "knutolaihelgesen@gmail.com" }
 ]
@@ -26,3 +26,8 @@ path = "src/script.py"
 
 [tool.hatch.metadata]
 allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+include = [
+    "src"
+]
