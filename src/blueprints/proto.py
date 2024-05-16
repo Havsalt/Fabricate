@@ -1,0 +1,6 @@
+"""
+    @property
+    def {name}(self) -> {type}: ...
+    @{name}.setter
+    def {name}(self, value: {type}) -> None: ...
+"""
