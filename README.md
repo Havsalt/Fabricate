@@ -1,3 +1,3 @@
-# fabricate
+# Fabricate command
 
-Describe your project here.
+Fabricates given blueprint and stores it in the clipboard
