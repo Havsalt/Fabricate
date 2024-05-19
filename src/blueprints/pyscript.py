@@ -1,4 +1,4 @@
 r"""
 @echo off
-python %~dp0\src\script.py %*
+python %~dp0\script.py %*
 """
