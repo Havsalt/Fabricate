@@ -1,4 +1,7 @@
 r"""
+
+__version__ = "0.1.0"
+
 import argparse
 
 
@@ -10,7 +13,7 @@ parser = argparse.ArgumentParser(
 )
 parser.add_argument("-v", "--version",
                     action="version",
-                    version=f"%(prog)s: v{__version__}")
+                    version="%(prog)s: v" + __version__)
 # add parser arguments here
 
 args = ParserArguments()
