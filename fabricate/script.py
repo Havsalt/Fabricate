@@ -20,6 +20,9 @@ class ParserArguments(argparse.Namespace):
 parser = argparse.ArgumentParser(
     prog="fab",
 )
+parser.add_argument("-v", "--version",
+                    action="version",
+                    version="%(prog)s: v" + __version__)
 
 subparsers = parser.add_subparsers(required=True, dest="blueprint")
 
