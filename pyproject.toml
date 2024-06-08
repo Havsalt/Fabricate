@@ -28,4 +28,4 @@ path = "src/script.py"
 allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
-include = ["src"]
+packages = ["src"]
