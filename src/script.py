@@ -1,10 +1,11 @@
 
-__version__ = "0.1.2"
+__version__ = "0.2.0"
 
 import argparse
 import pathlib
 
 import pyperclip as clipboard
+from actus import info
 
 from scanning import collect_format_keys
 
@@ -17,7 +18,7 @@ class ParserArguments(argparse.Namespace):
 
 
 parser = argparse.ArgumentParser(
-    prog="Fabricate",
+    prog="fab",
 )
 
 subparsers = parser.add_subparsers(required=True, dest="blueprint")
@@ -71,6 +72,6 @@ clipboard.copy(rendered)
 
 if args.verbose:
     line_count = rendered.count('\n')
-    print(f"[Info] Fabricated blueprint '{args.blueprint}' ({line_count} lines):")
+    info(f"Fabricated blueprint $[{args.blueprint}] (Linecount: $[{line_count}])")
 if not args.quiet:
     print(rendered)

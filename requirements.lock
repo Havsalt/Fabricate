@@ -8,5 +8,9 @@
 #   with-sources: false
 
 -e file:.
+actus==0.4.0
+    # via fabricate
+colex==0.1.0
+    # via actus
 pyperclip==1.8.2
     # via fabricate
