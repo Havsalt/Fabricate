@@ -1,9 +1,6 @@
 r"""
 @echo off
-set ORIGIN=%CD%
-cd /d %~dp0
-call .venv\Scripts\activate.bat
-python script.py %*
-cd /d %ORIGIN%
+call %~dp0\.venv\Scripts\activate.bat
+python %~dp0\script.py %*
 deactivate
 """
