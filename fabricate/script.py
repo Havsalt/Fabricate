@@ -1,5 +1,5 @@
 
-__version__ = "0.2.1"
+__version__ = "0.3.0"
 
 import argparse
 import pathlib
@@ -64,7 +64,7 @@ keys: dict[str, str] = {
 template = (
     pathlib.Path(__file__)
     .parent
-    .joinpath("blueprints", args.blueprint)
+    .joinpath("blueprints", args.blueprint.lower())
     .with_suffix(".py")
     .read_text(encoding="utf-8")
     .format(*args.arguments, **keys)
