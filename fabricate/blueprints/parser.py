@@ -13,7 +13,7 @@ class ParserArguments(argparse.Namespace):
 
 parser = argparse.ArgumentParser(
     prog="$inject[name]",
-    description="Copy 'here' path to clipboard",
+    description="$inject[desc]",
     add_help=False
 )
 parser.add_argument(
