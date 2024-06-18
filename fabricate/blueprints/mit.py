@@ -1,7 +1,7 @@
-"""
+r"""
 MIT License
 
-Copyright (c) {year} {owner}
+Copyright (c) $inject[year] $inject[owner]
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
