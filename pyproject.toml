@@ -29,4 +29,3 @@ allow-direct-references = true
 [tool.hatch.build.targets.wheel]
 include = ["fabricate/**", "cl.bat"]
 exclude = ["fabricate/**/__pycache__"]
-
